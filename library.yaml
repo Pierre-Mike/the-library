@@ -10,6 +10,39 @@ default_dirs:
     - global: ~/.claude/commands/
 
 library:
-  skills: []
+  skills:
+    - name: json-canvas
+      description: Create and edit Obsidian .canvas files programmatically with JSON Canvas format
+      source: https://github.com/Pierre-Mike/claude-config/blob/main/commands/json-canvas/SKILL.md
+
+    - name: md-to-pdf
+      description: Convert Markdown files to professionally formatted PDF documents using Pandoc
+      source: https://github.com/Pierre-Mike/claude-config/blob/main/commands/md-to-pdf/SKILL.md
+
+    - name: pdf-to-md
+      description: Convert PDF files to clean Markdown using marker-pdf for high-accuracy extraction
+      source: https://github.com/Pierre-Mike/claude-config/blob/main/commands/pdf-to-md/SKILL.md
+
+    - name: research-swarm
+      description: Orchestrate parallel research across 5 agents with democratic ranking of findings
+      source: https://github.com/Pierre-Mike/claude-config/blob/main/commands/research-swarm/SKILL.md
+
+    - name: skill-generator
+      description: Generate new Claude Code skills with progressive disclosure and best practices
+      source: https://github.com/Pierre-Mike/claude-config/blob/main/commands/skill-generator/SKILL.md
+
+    - name: vinted-image-gen
+      description: Generate staged product images for Vinted listings using Gemini AI and Playwright
+      source: https://github.com/Pierre-Mike/claude-config/blob/main/commands/vinted-image-gen/SKILL.md
+
+    - name: freecad
+      description: Generate FreeCAD Python scripts for 2D sketches, 3D objects, and parametric parts
+      source: https://github.com/Pierre-Mike/claude-config/blob/main/commands/freecad/SKILL.md
+      requires: [skill:freecad-script-generator]
+
+    - name: freecad-script-generator
+      description: FreeCAD Python scripting for 2D sketches, 3D solids, and parametric models
+      source: https://github.com/Pierre-Mike/freecad-script-generator/blob/main/SKILL.md
+
   agents: []
   prompts: []
