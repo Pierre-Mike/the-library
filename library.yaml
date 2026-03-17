@@ -44,5 +44,9 @@ library:
       description: FreeCAD Python scripting for 2D sketches, 3D solids, and parametric models
       source: https://github.com/Pierre-Mike/freecad-script-generator/blob/main/SKILL.md
 
+    - name: improve-codebase-architecture
+      description: Explore a codebase to find architectural improvement opportunities, surface shallow modules, and propose deepening refactors as GitHub issue RFCs
+      source: https://github.com/Pierre-Mike/skills/blob/main/improve-codebase-architecture/SKILL.md
+
   agents: []
   prompts: []
