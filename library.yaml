@@ -31,10 +31,6 @@ library:
       description: Generate FreeCAD Python scripts that create 2D sketches and 3D objects programmatically using FreeCAD's Python API
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/freecad/SKILL.md
 
-    - name: freecad-script-generator
-      description: FreeCAD Python scripting for 2D sketches, 3D solids, and parametric models
-      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/freecad/SKILL.md
-
     - name: git-guardrails-claude-code
       description: Set up Claude Code hooks to block dangerous git commands before they execute
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/git-guardrails-claude-code/SKILL.md
