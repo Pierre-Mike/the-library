@@ -33,7 +33,7 @@ library:
 
     - name: freecad-script-generator
       description: FreeCAD Python scripting for 2D sketches, 3D solids, and parametric models
-      source: https://github.com/Pierre-Mike/freecad-script-generator/blob/main/SKILL.md
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/freecad/SKILL.md
 
     - name: git-guardrails-claude-code
       description: Set up Claude Code hooks to block dangerous git commands before they execute
