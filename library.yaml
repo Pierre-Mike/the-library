@@ -11,42 +11,117 @@ default_dirs:
 
 library:
   skills:
-    - name: json-canvas
-      description: Create and edit Obsidian .canvas files programmatically with JSON Canvas format
-      source: https://github.com/Pierre-Mike/claude-config/blob/main/commands/json-canvas/SKILL.md
+    - name: agent-generator
+      description: Generates Claude Code agent configurations using official format, real-world patterns, and best practices for delegation, tool scoping, and multi-agent coordination
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/agent-generator/SKILL.md
 
-    - name: md-to-pdf
-      description: Convert Markdown files to professionally formatted PDF documents using Pandoc
-      source: https://github.com/Pierre-Mike/claude-config/blob/main/commands/md-to-pdf/SKILL.md
+    - name: deep-research
+      description: Conducts rigorous multi-phase deep research using orchestrator-worker architecture with DAG-based planning, parallel agent swarms, democratic evaluation, and adversarial challenge phases
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/deep-research/SKILL.md
 
-    - name: pdf-to-md
-      description: Convert PDF files to clean Markdown using marker-pdf for high-accuracy extraction
-      source: https://github.com/Pierre-Mike/claude-config/blob/main/commands/pdf-to-md/SKILL.md
+    - name: design-an-interface
+      description: Generate multiple radically different interface designs for a module using parallel sub-agents
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/design-an-interface/SKILL.md
 
-    - name: research-swarm
-      description: Orchestrate parallel research across 5 agents with democratic ranking of findings
-      source: https://github.com/Pierre-Mike/claude-config/blob/main/commands/research-swarm/SKILL.md
-
-    - name: skill-generator
-      description: Generate new Claude Code skills with progressive disclosure and best practices
-      source: https://github.com/Pierre-Mike/claude-config/blob/main/commands/skill-generator/SKILL.md
-
-    - name: vinted-image-gen
-      description: Generate staged product images for Vinted listings using Gemini AI and Playwright
-      source: https://github.com/Pierre-Mike/claude-config/blob/main/commands/vinted-image-gen/SKILL.md
+    - name: edit-article
+      description: Edit and improve articles by restructuring sections, improving clarity, and tightening prose
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/edit-article/SKILL.md
 
     - name: freecad
-      description: Generate FreeCAD Python scripts for 2D sketches, 3D objects, and parametric parts
-      source: https://github.com/Pierre-Mike/claude-config/blob/main/commands/freecad/SKILL.md
-      requires: [skill:freecad-script-generator]
+      description: Generate FreeCAD Python scripts that create 2D sketches and 3D objects programmatically using FreeCAD's Python API
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/freecad/SKILL.md
 
     - name: freecad-script-generator
       description: FreeCAD Python scripting for 2D sketches, 3D solids, and parametric models
       source: https://github.com/Pierre-Mike/freecad-script-generator/blob/main/SKILL.md
 
+    - name: git-guardrails-claude-code
+      description: Set up Claude Code hooks to block dangerous git commands before they execute
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/git-guardrails-claude-code/SKILL.md
+
+    - name: grill-me
+      description: Interview the user relentlessly about a plan or design until reaching shared understanding
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/grill-me/SKILL.md
+
     - name: improve-codebase-architecture
-      description: Explore a codebase to find architectural improvement opportunities, surface shallow modules, and propose deepening refactors as GitHub issue RFCs
-      source: https://github.com/Pierre-Mike/skills/blob/main/improve-codebase-architecture/SKILL.md
+      description: Explore a codebase to find architectural improvement opportunities, surface shallow modules, and propose deepening refactors
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/improve-codebase-architecture/SKILL.md
+
+    - name: json-canvas
+      description: JSON Canvas format for creating and editing Obsidian .canvas files programmatically with nodes, edges, groups, and layout strategies
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/json-canvas/SKILL.md
+
+    - name: library
+      description: Private skill distribution system for installing, using, pushing, and syncing skills, agents, and prompts from a private catalog
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/library/SKILL.md
+
+    - name: md-to-pdf
+      description: Converts Markdown files to professionally formatted PDF documents using Pandoc with sensible defaults
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/md-to-pdf/SKILL.md
+
+    - name: migrate-to-shoehorn
+      description: Migrate test files from `as` type assertions to @total-typescript/shoehorn
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/migrate-to-shoehorn/SKILL.md
+
+    - name: obsidian-vault
+      description: Search, create, and manage notes in the Obsidian vault with wikilinks and index notes
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/obsidian-vault/SKILL.md
+
+    - name: pdf-to-md
+      description: Converts PDF files to clean well-structured Markdown using marker-pdf for high-accuracy extraction of text, tables, headers, and equations
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/pdf-to-md/SKILL.md
+
+    - name: prd-to-issues
+      description: Break a PRD into independently-grabbable GitHub issues using tracer-bullet vertical slices
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/prd-to-issues/SKILL.md
+
+    - name: prd-to-plan
+      description: Turn a PRD into a multi-phase implementation plan using tracer-bullet vertical slices, saved as a local Markdown file
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/prd-to-plan/SKILL.md
+
+    - name: request-refactor-plan
+      description: Create a detailed refactor plan with tiny commits via user interview, then file it as a GitHub issue
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/request-refactor-plan/SKILL.md
+
+    - name: research-swarm
+      description: Orchestrates parallel research across 5 agents with democratic argumentation phase and ranked synthesis of findings
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/research-swarm/SKILL.md
+
+    - name: scaffold-exercises
+      description: Create exercise directory structures with sections, problems, solutions, and explainers that pass linting
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/scaffold-exercises/SKILL.md
+
+    - name: setup-pre-commit
+      description: Set up Husky pre-commit hooks with lint-staged (Prettier), type checking, and tests in the current repo
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/setup-pre-commit/SKILL.md
+
+    - name: skill-generator
+      description: Generates new Claude Code skills, modifies and improves existing skills, and measures skill performance through evaluation and benchmarking
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/skill-generator/SKILL.md
+
+    - name: tdd
+      description: Test-driven development with red-green-refactor loop for building features or fixing bugs
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/tdd/SKILL.md
+
+    - name: triage-issue
+      description: Triage a bug by exploring the codebase to find root cause, then create a GitHub issue with a TDD-based fix plan
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/triage-issue/SKILL.md
+
+    - name: ubiquitous-language
+      description: Extract a DDD-style ubiquitous language glossary from the current conversation, flagging ambiguities and proposing canonical terms
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/ubiquitous-language/SKILL.md
+
+    - name: vinted-image-gen
+      description: Generates staged product images for Vinted listings using Gemini AI with Playwright for session auth
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/vinted-image-gen/SKILL.md
+
+    - name: write-a-prd
+      description: Create a PRD through user interview, codebase exploration, and module design, then submit as a GitHub issue
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/write-a-prd/SKILL.md
+
+    - name: write-a-skill
+      description: Create new agent skills with proper structure, progressive disclosure, and bundled resources
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/write-a-skill/SKILL.md
 
   agents: []
   prompts: []
