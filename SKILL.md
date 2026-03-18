@@ -55,10 +55,9 @@ What would you like to do?
 8. search   — Find entries by keyword
 ```
 
-3. Ask the user: "Which action would you like to run? (enter a number or command name)"
-4. Wait for the user's response, then execute the chosen command as if they had typed `/library <command>`.
-   - For commands that require a name/keyword (add, use, push, remove, search), ask for the missing argument after the user selects the action.
-   - Use the catalog contents to provide contextual hints (e.g., for `use` or `push`, list the catalog entries the user can pick from).
+3. Use the **AskUserQuestion** tool to ask: "Which action would you like to run? (enter a number or command name)"
+4. Once the user answers, if the chosen command requires a name/keyword (add, use, push, remove, search), use **AskUserQuestion** again to ask for it — listing the relevant catalog entries as options.
+5. Execute the chosen command as if they had typed `/library <command> <arg>`.
 
 ## Cookbook
 
