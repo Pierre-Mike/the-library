@@ -49,7 +49,7 @@ library:
 
     - name: library
       description: Private skill distribution system for installing, using, pushing, and syncing skills, agents, and prompts from a private catalog
-      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/library/SKILL.md
+      source: https://github.com/Pierre-Mike/the-library/blob/main/SKILL.md
 
     - name: md-to-pdf
       description: Converts Markdown files to professionally formatted PDF documents using Pandoc with sensible defaults
