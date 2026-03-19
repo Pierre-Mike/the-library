@@ -120,4 +120,7 @@ library:
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/write-a-skill/SKILL.md
 
   agents: []
-  prompts: []
+  prompts:
+    - name: basic-knowledge
+      description: Engineering axioms for humans and AI agents — tooling, architecture, branching, testing, error handling, security, and monitoring principles with enforcement strategies
+      source: https://github.com/Pierre-Mike/agentic/blob/main/prompts/Basic_knowledge.md
