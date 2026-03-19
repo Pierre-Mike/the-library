@@ -31,6 +31,10 @@ library:
       description: Generate FreeCAD Python scripts that create 2D sketches and 3D objects programmatically using FreeCAD's Python API
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/freecad/SKILL.md
 
+    - name: basic-knowledge
+      description: Engineering axioms and canonical tooling choices for TypeScript projects — Biome, Lefthook, bun, Effect-TS, functional core/imperative shell, co-located tests, and enforcement patterns
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/basic-knowledge/SKILL.md
+
     - name: git-guardrails-claude-code
       description: Set up Claude Code hooks to block dangerous git commands before they execute
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/git-guardrails-claude-code/SKILL.md
@@ -120,7 +124,4 @@ library:
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/write-a-skill/SKILL.md
 
   agents: []
-  prompts:
-    - name: basic-knowledge
-      description: Engineering axioms for humans and AI agents — tooling, architecture, branching, testing, error handling, security, and monitoring principles with enforcement strategies
-      source: https://github.com/Pierre-Mike/agentic/blob/main/prompts/Basic_knowledge.md
+  prompts: []
