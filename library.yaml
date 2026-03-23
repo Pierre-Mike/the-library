@@ -15,6 +15,10 @@ library:
       description: Generates Claude Code agent configurations using official format, real-world patterns, and best practices for delegation, tool scoping, and multi-agent coordination
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/agent-generator/SKILL.md
 
+    - name: canvas-generator
+      description: Generate visually precise Obsidian JSON Canvas (.canvas) files with mathematically computed layouts for architecture diagrams, flowcharts, dependency graphs, and more
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/canvas-generator/SKILL.md
+
     - name: deep-research
       description: Conducts rigorous multi-phase deep research using orchestrator-worker architecture with DAG-based planning, parallel agent swarms, democratic evaluation, and adversarial challenge phases
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/deep-research/SKILL.md
