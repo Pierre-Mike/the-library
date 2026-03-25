@@ -71,6 +71,14 @@ library:
       description: Search, create, and manage notes in the Obsidian vault with wikilinks and index notes
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/obsidian-vault/SKILL.md
 
+    - name: pi-extension-generator
+      description: Create, debug, and fix pi extensions — TypeScript modules that add custom tools, slash commands, event interceptors, stateful UI widgets, and bash wrappers
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/pi-extension-generator/SKILL.md
+
+    - name: pi-extension-testing
+      description: Testing strategies and patterns for pi extensions — unit tests, integration tests with mock ctx, smoke tests, eval datasets, state reconstruction, and document-consistency checks
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/pi-extension-testing/SKILL.md
+
     - name: pdf-to-md
       description: Converts PDF files to clean well-structured Markdown using marker-pdf for high-accuracy extraction of text, tables, headers, and equations
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/pdf-to-md/SKILL.md
