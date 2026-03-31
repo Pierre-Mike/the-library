@@ -8,6 +8,9 @@ default_dirs:
   prompts:
     - default: .claude/commands/
     - global: ~/.claude/commands/
+  extensions:
+    - default: .pi/extensions/
+    - global: ~/.pi/agent/extensions/
 
 library:
   skills:
@@ -138,6 +141,67 @@ library:
     - name: write-a-skill
       description: Create new agent skills with proper structure, progressive disclosure, and bundled resources
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/write-a-skill/SKILL.md
+
+  extensions:
+    - name: captain
+      description: Multi-step pipeline orchestrator for defining sequential and parallel AI agent workflows with quality gates and failure handling
+      source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/captain/README.md
+
+    - name: claude-modes
+      description: Switch between three operating modes (code, plan, review) to control Claude's tool access and behavior constraints
+      source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/claude-modes/README.md
+
+    - name: clear
+      description: Wipes conversation context and starts a fresh session with full runtime reload via /clear command
+      source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/clear/README.md
+
+    - name: freecad
+      description: Drive FreeCAD from the terminal to create, modify, and batch-export 3D CAD models via natural language
+      source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/freecad/README.md
+
+    - name: handoff
+      description: Generates comprehensive handoff prompts for the next AI agent with project context, accomplishments, and next steps
+      source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/handoff/README.md
+
+    - name: native-web-search
+      description: Powers a web_search tool using Anthropic's native web search with no API keys or external dependencies required
+      source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/native-web-search/README.md
+
+    - name: refactor-loop
+      description: Iterative refactoring pipeline that runs analyze-refactor-verify cycles with optional git commits and progress tracking
+      source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/refactor-loop/README.md
+
+    - name: repeat
+      description: General-purpose loop extension that repeats agent turns automatically in goal-based, fixed-pass, or pipeline-stage modes
+      source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/repeat/README.md
+
+    - name: safety-destructive-commands
+      description: Intercepts dangerous bash patterns (rm -rf, dd, mkfs, etc.) with confirmation or hard-blocking
+      source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/safety-destructive-commands/README.md
+
+    - name: safety-git-operations
+      description: Guards state-changing git and GitHub/GitLab CLI commands with severity-based confirmation and session memory
+      source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/safety-git-operations/README.md
+
+    - name: safety-network-exfiltration
+      description: Prevents data exfiltration, remote code execution, and unauthorized network operations via curl/wget/scp/rsync
+      source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/safety-network-exfiltration/README.md
+
+    - name: safety-path-protection
+      description: Protects sensitive directories (.git, node_modules, .env, CI/CD configs) from unauthorized access across all tools
+      source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/safety-path-protection/README.md
+
+    - name: terminal
+      description: Executes shell commands and displays output inline with smart truncation via /terminal or /t commands
+      source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/terminal/README.md
+
+    - name: voice
+      description: Voice input extension using Whisper for local speech-to-text transcription with audio recording overlay
+      source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/voice/voice.ts
+
+    - name: zellij-tab-namer
+      description: Automatically renames the active Zellij tab with a short label summarizing the conversation after each agent turn
+      source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/zellij-tab-namer/README.md
 
   agents: []
   prompts: []
