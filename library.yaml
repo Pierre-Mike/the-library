@@ -167,6 +167,10 @@ library:
       description: Powers a web_search tool using Anthropic's native web search with no API keys or external dependencies required
       source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/native-web-search/README.md
 
+    - name: project-init-claude
+      description: Auto-creates .pi/settings.json on session start with global ~/.claude/skills + agents and local .claude/skills + agents for full skill coverage in every new pi project
+      source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/project-init-claude/README.md
+
     - name: refactor-loop
       description: Iterative refactoring pipeline that runs analyze-refactor-verify cycles with optional git commits and progress tracking
       source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/refactor-loop/README.md
