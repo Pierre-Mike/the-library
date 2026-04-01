@@ -215,5 +215,20 @@ library:
       description: Automatically renames the active Zellij tab with a short label summarizing the conversation after each agent turn
       source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/zellij-tab-namer/README.md
 
-  agents: []
+  agents:
+    - name: planner
+      description: Breaks down complex tasks into structured plans with clear steps and dependencies
+      source: /Users/pierre-mikel/Github/agentic/agents/planner.md
+
+    - name: reviewer
+      description: Reviews code, plans, or outputs for quality, correctness, and improvement opportunities
+      source: /Users/pierre-mikel/Github/agentic/agents/reviewer.md
+
+    - name: scout
+      description: Explores codebases, files, and directories to gather context and report findings
+      source: /Users/pierre-mikel/Github/agentic/agents/scout.md
+
+    - name: worker
+      description: Executes focused implementation tasks with precision and minimal scope creep
+      source: /Users/pierre-mikel/Github/agentic/agents/worker.md
   prompts: []
