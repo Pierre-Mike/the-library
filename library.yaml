@@ -226,13 +226,13 @@ library:
 
     - name: reviewer
       description: Reviews code, plans, or outputs for quality, correctness, and improvement opportunities
-      source: https://github.com/Pierre-Mike/agentic/blob/main/agents/reviewer.md
+      source: https://github.com/Pierre-Mike/agentic/blob/main/agents/reviewer/reviewer.md
 
     - name: scout
       description: Explores codebases, files, and directories to gather context and report findings
-      source: https://github.com/Pierre-Mike/agentic/blob/main/agents/scout.md
+      source: https://github.com/Pierre-Mike/agentic/blob/main/agents/scout/scout.md
 
     - name: worker
       description: Executes focused implementation tasks with precision and minimal scope creep
-      source: https://github.com/Pierre-Mike/agentic/blob/main/agents/worker.md
+      source: https://github.com/Pierre-Mike/agentic/blob/main/agents/worker/worker.md
   prompts: []
