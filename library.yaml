@@ -183,6 +183,10 @@ library:
       description: General-purpose loop extension that repeats agent turns automatically in goal-based, fixed-pass, or pipeline-stage modes
       source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/repeat/README.md
 
+    - name: subagent
+      description: Delegate tasks to specialized subagents (scout, planner, worker, reviewer) with isolated context windows. Supports single, parallel, and chained workflows with streaming output and usage tracking.
+      source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/subagent/README.md
+
     - name: safety-destructive-commands
       description: Intercepts dangerous bash patterns (rm -rf, dd, mkfs, etc.) with confirmation or hard-blocking
       source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/safety-destructive-commands/README.md
