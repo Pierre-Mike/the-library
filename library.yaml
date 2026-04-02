@@ -151,6 +151,10 @@ library:
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/write-a-skill/SKILL.md
 
   extensions:
+    - name: agentic
+      description: Config-driven multi-agent orchestration — define Orchestrator, domain-scoped Leads, and Workers in .agentic.yml, then run /do <task> to spawn the full pipeline with hard domain enforcement
+      source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/agentic/README.md
+
     - name: captain
       description: Multi-step pipeline orchestrator for defining sequential and parallel AI agent workflows with quality gates and failure handling
       source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/captain/README.md
