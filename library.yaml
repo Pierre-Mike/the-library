@@ -38,6 +38,10 @@ library:
       description: Edit and improve articles by restructuring sections, improving clarity, and tightening prose
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/edit-article/SKILL.md
 
+    - name: expertise
+      description: Teaches any agent to accumulate and retrieve domain expertise across sessions — read before starting work in a domain, write after completing a task where something non-obvious was learned
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/expertise/SKILL.md
+
     - name: freecad
       description: Generate FreeCAD Python scripts that create 2D sketches and 3D objects programmatically using FreeCAD's Python API
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/freecad/SKILL.md
