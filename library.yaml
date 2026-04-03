@@ -151,6 +151,10 @@ library:
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/write-a-skill/SKILL.md
 
   extensions:
+    - name: mastra-workflow
+      description: Run Mastra workflows inside pi — /workflow <task> executes sequential, parallel, or branching steps where each step spawns a pi subagent for LLM work. No Mastra API keys needed.
+      source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/mastra-workflow/README.md
+
     - name: mastra-memory
       description: Persists Pi session messages to SQLite via Mastra Memory and injects past context into the system prompt on session start — no embeddings, pure recency recall, one thread per project
       source: /Users/pierre-mikel/Github/agentic/.pi/extensions/mastra-memory/index.ts
