@@ -215,10 +215,6 @@ library:
       description: Protects sensitive directories (.git, node_modules, .env, CI/CD configs) from unauthorized access across all tools
       source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/safety-path-protection/README.md
 
-    - name: terminal
-      description: Executes shell commands and displays output inline with smart truncation via /terminal or /t commands
-      source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/terminal/README.md
-
     - name: voice
       description: Voice input extension using Whisper for local speech-to-text transcription with audio recording overlay
       source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/voice/voice.ts
