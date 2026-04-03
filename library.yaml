@@ -151,6 +151,10 @@ library:
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/write-a-skill/SKILL.md
 
   extensions:
+    - name: mastra-memory
+      description: Persists Pi session messages to SQLite via Mastra Memory and injects past context into the system prompt on session start — no embeddings, pure recency recall, one thread per project
+      source: /Users/pierre-mikel/Github/agentic/.pi/extensions/mastra-memory/index.ts
+
     - name: agentic
       description: Config-driven multi-agent orchestration — define Orchestrator, domain-scoped Leads, and Workers in .agentic.yml, then run /do <task> to spawn the full pipeline with hard domain enforcement
       source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/agentic/README.md
