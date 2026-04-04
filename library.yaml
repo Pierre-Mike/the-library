@@ -151,6 +151,10 @@ library:
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/write-a-skill/SKILL.md
 
   extensions:
+    - name: mastra-tools
+      description: Register any Mastra tool in pi via .mastra-tools.ts — tools become available to the LLM in every session alongside built-in pi tools. Supports Zod 4 auto-conversion and any createTool() definition.
+      source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/mastra-tools/README.md
+
     - name: mastra-workflow
       description: Run Mastra workflows inside pi — /workflow <task> executes sequential, parallel, or branching steps where each step spawns a pi subagent for LLM work. No Mastra API keys needed.
       source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/mastra-workflow/README.md
