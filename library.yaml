@@ -155,6 +155,10 @@ library:
       description: Register any Mastra tool in pi via .mastra-tools.ts — tools become available to the LLM in every session alongside built-in pi tools. Supports Zod 4 auto-conversion and any createTool() definition.
       source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/mastra-tools/README.md
 
+    - name: mastra-agent-network
+      description: Run Mastra agent networks inside pi — /agent-network <task> or run_agent_network tool spins up a routing agent that orchestrates named sub-agents, each with their own model and instructions. Pi OAuth routing used automatically (no vendor API keys needed).
+      source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/mastra-agent-network/README.md
+
     - name: mastra-workflow
       description: Run Mastra workflows inside pi — /workflow <task> executes sequential, parallel, or branching steps where each step spawns a pi subagent for LLM work. No Mastra API keys needed.
       source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/mastra-workflow/README.md
