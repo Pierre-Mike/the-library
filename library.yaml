@@ -151,6 +151,18 @@ library:
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/write-a-skill/SKILL.md
 
   extensions:
+    - name: github-search
+      description: Search GitHub repos, issues, and PRs directly from pi. Registers github_search_repos and github_search_issues tools. Works without auth (60 req/h), set GITHUB_TOKEN for 5000 req/h.
+      source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/github-search/index.ts
+
+    - name: hn-search
+      description: Search Hacker News stories and comments from pi. Registers search_hn tool using the Algolia HN API. No API key needed.
+      source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/hn-search/index.ts
+
+    - name: jina-reader
+      description: Fetch any URL as clean Markdown from pi. Registers read_url tool using Jina Reader. No API key needed, set JINA_API_KEY for higher rate limits.
+      source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/jina-reader/index.ts
+
     - name: mastra-tools
       description: Register any Mastra tool in pi via .mastra-tools.ts — tools become available to the LLM in every session alongside built-in pi tools. Supports Zod 4 auto-conversion and any createTool() definition.
       source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/mastra-tools/README.md
