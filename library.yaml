@@ -199,6 +199,10 @@ library:
       description: Drive FreeCAD from the terminal to create, modify, and batch-export 3D CAD models via natural language
       source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/freecad/README.md
 
+    - name: free-ai
+      description: Toggle free AI providers (Gemini, Groq, Cerebras, HuggingFace, OpenRouter, Mistral, MiniMax, Kimi) with Ctrl+Shift+F. Reads FREE_* env vars and registers one provider per key found.
+      source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/free-ai/index.ts
+
     - name: handoff
       description: Generates comprehensive handoff prompts for the next AI agent with project context, accomplishments, and next steps
       source: https://github.com/Pierre-Mike/agentic/blob/main/extensions/handoff/README.md
