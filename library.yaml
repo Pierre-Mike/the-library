@@ -22,6 +22,11 @@ library:
       description: Presents a proposed approach in progressive confirmable chunks with recommended decisions and alternatives before implementation begins. Use when aligning on a design, plan, or technical approach before implementation.
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/align/SKILL.md
 
+    - name: auto-optimize
+      description: Autonomous overnight skill optimization loop — takes a skill with locked evals and grinds it to peak performance through iterative benchmark-improve-keep/discard cycles on Haiku, with strategy rotation, domain-aware feedback adapters, and git-based isolation
+      source: /Users/pierre-mikel/.claude/skills/auto-optimize/SKILL.md
+      requires: [skill:tdd-skill-creation]
+
     - name: canvas-generator
       description: Generate visually precise Obsidian JSON Canvas (.canvas) files with mathematically computed layouts for architecture diagrams, flowcharts, dependency graphs, and more
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/canvas-generator/SKILL.md
