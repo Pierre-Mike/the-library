@@ -26,6 +26,10 @@ library:
       description: Generate visually precise Obsidian JSON Canvas (.canvas) files with mathematically computed layouts for architecture diagrams, flowcharts, dependency graphs, and more
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/canvas-generator/SKILL.md
 
+    - name: canvas-generator-v2
+      description: Deterministic Obsidian JSON Canvas generator with Python layout engine. 2500/2500 on 100 evals covering flowcharts, org charts, state machines, CQRS, hexagonal arch, pub-sub, and 15-node mega-architectures
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/canvas-generator-v2/SKILL.md
+
     - name: deep-research
       description: Conducts rigorous multi-phase deep research using orchestrator-worker architecture with DAG-based planning, parallel agent swarms, democratic evaluation, and adversarial challenge phases
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/deep-research/SKILL.md
