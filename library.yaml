@@ -139,6 +139,10 @@ library:
       description: Creates Claude Code skills using test-driven development — design evals first with multi-agent brainstorming, validate against baseline, lock tests, then autonomously iterate the skill until it passes
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/tdd-skill-creation/SKILL.md
 
+    - name: token-compact
+      description: Compresses Claude output to maximum information density — drops articles, filler, pleasantries, hedging, preambles, summaries. Fragments over sentences, hard 150-word cap, exact API term preservation. 92% eval pass rate, ~150 token skill cost.
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/token-compact/SKILL.md
+
     - name: triage-issue
       description: Triage a bug by exploring the codebase to find root cause, then create a GitHub issue with a TDD-based fix plan
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/triage-issue/SKILL.md
