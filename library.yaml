@@ -8,6 +8,9 @@ default_dirs:
   prompts:
     - default: .claude/commands/
     - global: ~/.claude/commands/
+  tools:
+    - default: .claude/tools/
+    - global: ~/.claude/tools/
   extensions:
     - default: .pi/extensions/
     - global: ~/.pi/agent/extensions/
@@ -26,10 +29,6 @@ library:
       description: Autonomous overnight skill optimization loop — takes a skill with locked evals and grinds it to peak performance through iterative benchmark-improve-keep/discard cycles on Haiku, with strategy rotation, domain-aware feedback adapters, and git-based isolation
       source: /Users/pierre-mikel/.claude/skills/auto-optimize/SKILL.md
       requires: [skill:tdd-skill-creation]
-
-    - name: canvas-generator
-      description: Generate visually precise Obsidian JSON Canvas (.canvas) files with mathematically computed layouts for architecture diagrams, flowcharts, dependency graphs, and more
-      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/canvas-generator/SKILL.md
 
     - name: canvas-generator-v2
       description: Deterministic Obsidian JSON Canvas generator with Python layout engine. 2500/2500 on 100 evals covering flowcharts, org charts, state machines, CQRS, hexagonal arch, pub-sub, and 15-node mega-architectures
@@ -284,4 +283,21 @@ library:
     - name: worker
       description: Executes focused implementation tasks with precision and minimal scope creep
       source: https://github.com/Pierre-Mike/agentic/blob/main/agents/worker/worker.md
+  tools:
+    - name: scoped-edit
+      description: Find-and-replace with path enforcement — validates file is within --scope before editing
+      source: https://github.com/Pierre-Mike/agentic/blob/main/tools/scoped-edit/run
+
+    - name: scoped-write
+      description: File write with path enforcement — validates file is within --scope before writing
+      source: https://github.com/Pierre-Mike/agentic/blob/main/tools/scoped-write/run
+
+    - name: spawn-specialist
+      description: One-shot scoped Claude session with hard tool allowlist and optional skill loading
+      source: https://github.com/Pierre-Mike/agentic/blob/main/tools/spawn-specialist/run
+
+    - name: word-count
+      description: Self-contained MCP tool — counts words, characters, lines in text
+      source: https://github.com/Pierre-Mike/agentic/blob/main/tools/word-count/tool.ts
+
   prompts: []
