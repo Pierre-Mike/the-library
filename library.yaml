@@ -130,6 +130,10 @@ library:
       description: Generates new Claude Code skills, modifies and improves existing skills, and measures skill performance through evaluation and benchmarking
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/skill-generator/SKILL.md
 
+    - name: statusline
+      description: Claude Code status line — default stats (model, context %, cost, +/- lines, elapsed) plus active skill icons and current git branch of the workspace
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/statusline/SKILL.md
+
     - name: tdd
       description: Test-driven development with red-green-refactor loop for building features or fixing bugs
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/tdd/SKILL.md
