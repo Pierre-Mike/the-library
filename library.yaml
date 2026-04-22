@@ -14,6 +14,9 @@ default_dirs:
   extensions:
     - default: .pi/extensions/
     - global: ~/.pi/agent/extensions/
+  statuslines:
+    - default: .claude/statuslines/
+    - global: ~/.claude/statuslines/
 
 library:
   skills:
@@ -129,10 +132,6 @@ library:
     - name: skill-generator
       description: Generates new Claude Code skills, modifies and improves existing skills, and measures skill performance through evaluation and benchmarking
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/skill-generator/SKILL.md
-
-    - name: statusline
-      description: Claude Code status line — default stats (model, context %, cost, +/- lines, elapsed) plus active skill icons and current git branch of the workspace
-      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/statusline/SKILL.md
 
     - name: tdd
       description: Test-driven development with red-green-refactor loop for building features or fixing bugs
@@ -305,3 +304,8 @@ library:
       source: https://github.com/Pierre-Mike/agentic/blob/main/tools/word-count/tool.ts
 
   prompts: []
+
+  statuslines:
+    - name: default
+      description: Default Claude Code status line — model, context %, cost, +/- lines, elapsed, active skill icons, and current git branch of the workspace
+      source: https://github.com/Pierre-Mike/agentic/blob/main/statuslines/default/statusline.sh
