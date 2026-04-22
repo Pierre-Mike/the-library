@@ -14,7 +14,7 @@ git pull
 
 ### 2. Read the Catalog
 - Read `library.yaml`
-- Parse all entries from `library.skills`, `library.agents`, and `library.prompts`
+- Parse all entries from `library.skills`, `library.agents`, `library.prompts`, and `library.statuslines`
 
 ### 3. Check Install Status
 For each entry:
@@ -44,6 +44,11 @@ Format the output as a table grouped by type:
 | Name | Description | Source | Status |
 |------|-------------|--------|--------|
 | prompt-name | prompt-description | github.com/... | not installed |
+
+## Statuslines
+| Name | Description | Source | Status |
+|------|-------------|--------|--------|
+| statusline-name | statusline-description | github.com/... | installed (global) |
 ```
 
 If a section is empty, show: `No <type> in catalog.`

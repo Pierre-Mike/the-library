@@ -126,6 +126,7 @@ When working with GitHub sources, prefer `gh api` for accessing single files (e.
 The `requires` field uses typed references to avoid ambiguity:
 - `skill:name` — references a skill in the library catalog
 - `agent:name` — references an agent in the library catalog
+- `tool:name` — references a tool in the library catalog
 - `prompt:name` — references a prompt in the library catalog
 
 When resolving dependencies: look up each reference in `library.yaml`, fetch all dependencies first (recursively), then fetch the requested item.
@@ -142,9 +143,15 @@ default_dirs:
     agents:
         - default: .claude/agents/
         - global: ~/.claude/agents/
+    tools:
+        - default: .claude/tools/
+        - global: ~/.claude/tools/
     prompts:
         - default: .claude/commands/
         - global: ~/.claude/commands/
+    statuslines:
+        - default: .claude/statuslines/
+        - global: ~/.claude/statuslines/
 ```
 
 - If the user says "global" or "globally", use the `global` directory.

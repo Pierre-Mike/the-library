@@ -1,7 +1,7 @@
 # Use a Skill from the Library
 
 ## Context
-Pull a skill, agent, or prompt from the catalog into the local environment. If already installed locally, overwrite with the latest from the source (refresh).
+Pull a skill, agent, prompt, or statusline from the catalog into the local environment. If already installed locally, overwrite with the latest from the source (refresh).
 
 ## Input
 The user provides a skill name or description.
@@ -17,7 +17,7 @@ git pull
 
 ### 2. Find the Entry
 - Read `library.yaml`
-- Search across `library.skills`, `library.agents`, and `library.prompts`
+- Search across `library.skills`, `library.agents`, `library.prompts`, and `library.statuslines`
 - Match by name (exact) or description (fuzzy/keyword match)
 - If multiple matches, show them and ask the user to pick one
 - If no match, tell the user and suggest `/library search`
@@ -35,7 +35,7 @@ If the entry has a `requires` field:
 - If user said "global" or "globally" → use the `global` path
 - If user specified a custom path → use that path
 - Otherwise → use the `default` path
-- Select the correct section based on type (skills/agents/prompts)
+- Select the correct section based on type (skills/agents/prompts/statuslines)
 
 ### 5. Fetch from Source
 
@@ -53,6 +53,15 @@ If the entry has a `requires` field:
 - For prompts: copy just the prompt file to the target:
   ```bash
   cp <prompt_file> <target_directory>/<prompt_name>.md
+  ```
+- For statuslines: copy the entire parent directory to the target and ensure `statusline.sh` is executable:
+  ```bash
+  cp -R <parent_directory>/ <target_directory>/<name>/
+  chmod +x <target_directory>/<name>/statusline.sh
+  ```
+  After copy, tell the user to wire it in `settings.json`:
+  ```json
+  { "statusLine": { "type": "command", "command": "<target_directory>/<name>/statusline.sh", "padding": 2 } }
   ```
 - If the agent or prompt is nested in a subdirectory under the `agents/` or `commands/` directories, copy the subdirectory to the target as well, creating the subdir if it doesn't exist. This is useful because it keeps the agents or commands grouped together.
 
@@ -83,7 +92,7 @@ If the entry has a `requires` field:
 
 ### 6. Verify Installation
 - Confirm the target directory exists
-- Confirm the main file (SKILL.md, AGENT.md, or prompt file) exists in it
+- Confirm the main file (SKILL.md, AGENT.md, prompt file, or `statusline.sh`) exists in it
 - Report success with the installed path
 
 ### 7. Confirm
