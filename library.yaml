@@ -33,9 +33,9 @@ library:
       source: /Users/pierre-mikel/.claude/skills/auto-optimize/SKILL.md
       requires: [skill:tdd-skill-creation]
 
-    - name: canvas-generator-v2
+    - name: canvas-generator
       description: Deterministic Obsidian JSON Canvas generator with Python layout engine. 2500/2500 on 100 evals covering flowcharts, org charts, state machines, CQRS, hexagonal arch, pub-sub, and 15-node mega-architectures
-      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/canvas-generator-v2/SKILL.md
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/canvas-generator/SKILL.md
 
     - name: deep-research
       description: Conducts rigorous multi-phase deep research using orchestrator-worker architecture with DAG-based planning, parallel agent swarms, democratic evaluation, and adversarial challenge phases
