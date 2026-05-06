@@ -65,10 +65,6 @@ library:
       description: Set up Claude Code hooks to block dangerous git commands before they execute
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/git-guardrails-claude-code/SKILL.md
 
-    - name: grill-me
-      description: Interview the user relentlessly about a plan or design until reaching shared understanding
-      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/grill-me/SKILL.md
-
     - name: improve-codebase-architecture
       description: Explore a codebase to find architectural improvement opportunities, surface shallow modules, and propose deepening refactors
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/improve-codebase-architecture/SKILL.md
@@ -164,6 +160,10 @@ library:
     - name: write-a-skill
       description: Create new agent skills with proper structure, progressive disclosure, and bundled resources
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/write-a-skill/SKILL.md
+
+    - name: zellij-fleet-manager
+      description: Introspect, recap, dispatch to, and clean up Zellij sessions across a fleet — including detached sessions, non-focused tabs, and panes you cannot see. Use when the user asks to inventory all Zellij sessions, recap one or many Claude TUIs (live or from JSONL logs), send a slash command to specific idle Claude panes after explicit approval, or surface stranded/orphaned/drained sessions safe to kill. Driven by zellij CLI plus on-disk reads of ~/.claude/projects/. Never attaches, never sends keystrokes without per-batch approval. Complements claude-zellij-fleet/scripts/.
+      source: /Users/pierre-mikel/Github/agentic/skills/zellij-fleet-manager/SKILL.md
 
   extensions:
     - name: github-search
