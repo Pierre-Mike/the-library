@@ -57,6 +57,10 @@ library:
       description: Generate FreeCAD Python scripts that create 2D sketches and 3D objects programmatically using FreeCAD's Python API
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/freecad/SKILL.md
 
+    - name: goal2
+      description: One-shot slash command that captures a goal, decomposes it into 2-5 sub-step harness tasks via TaskCreate, and spawns a background teammate via TaskCreate to orchestrate them. Use when invoking /goal2 with a goal sentence.
+      source: /Users/pierre-mikel/Github/agentic/skills/goal2/SKILL.md
+
     - name: ts-axioms
       description: Engineering axioms and canonical tooling choices for TypeScript projects — Biome, Lefthook, bun, Effect-TS, functional core/imperative shell, co-located tests, and enforcement patterns
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/ts-axioms/SKILL.md
