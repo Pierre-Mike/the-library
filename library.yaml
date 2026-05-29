@@ -105,6 +105,10 @@ library:
       description: Converts PDF files to clean well-structured Markdown using marker-pdf for high-accuracy extraction of text, tables, headers, and equations
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/pdf-to-md/SKILL.md
 
+    - name: pr-automerge
+      description: Create a pull request after completing all changes, then enable auto-merge so the PR merges automatically once CI/CD passes
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/pr-automerge/SKILL.md
+
     - name: prd-to-issues
       description: Break a PRD into independently-grabbable GitHub issues using tracer-bullet vertical slices
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/prd-to-issues/SKILL.md
