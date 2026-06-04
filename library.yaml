@@ -62,7 +62,7 @@ library:
       source: /Users/pierre-mikel/Github/agentic/skills/goal2/SKILL.md
 
     - name: ts-axioms
-      description: Engineering axioms and canonical tooling choices for TypeScript projects — Biome, Lefthook, bun, Effect-TS, functional core/imperative shell, co-located tests, and enforcement patterns
+      description: Engineering axioms and canonical tooling for TypeScript projects — bhvr scaffold (Bun+Hono+Vite+React), Biome, Lefthook, bun, Effect-TS, functional core/imperative shell, Fallow, co-located tests, TanStack Router (UI only) + Query data fetching, and enforcement patterns
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/ts-axioms/SKILL.md
 
     - name: git-guardrails-claude-code
