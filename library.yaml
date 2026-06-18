@@ -69,6 +69,10 @@ library:
       description: Set up Claude Code hooks to block dangerous git commands before they execute
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/git-guardrails-claude-code/SKILL.md
 
+    - name: hammerspoon
+      description: Develop, test, and extend Hammerspoon Lua configs — library module layout (lib/), busted TDD setup with hs.* mocks, and pure-util extraction patterns
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/hammerspoon/SKILL.md
+
     - name: improve-codebase-architecture
       description: Explore a codebase to find architectural improvement opportunities, surface shallow modules, and propose deepening refactors
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/improve-codebase-architecture/SKILL.md
