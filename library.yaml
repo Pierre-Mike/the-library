@@ -125,6 +125,10 @@ library:
       description: Orchestrates parallel research across 5 agents with democratic argumentation phase and ranked synthesis of findings
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/research-swarm/SKILL.md
 
+    - name: retro
+      description: Project-agnostic retrospective look-back over recent agent/engineering work. Scans optional sources (.claude/traces/, git history, merged PRs, open branches), surfaces ranked findings biased toward deterministic enforcement, and emits a portable markdown report. Use when invoking /retro or asking for a retrospective/post-mortem of recent work.
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/retro/SKILL.md
+
     - name: scaffold-exercises
       description: Create exercise directory structures with sections, problems, solutions, and explainers that pass linting
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/scaffold-exercises/SKILL.md
