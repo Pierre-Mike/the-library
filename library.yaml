@@ -109,6 +109,10 @@ library:
       description: Converts PDF files to clean well-structured Markdown using marker-pdf for high-accuracy extraction of text, tables, headers, and equations
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/pdf-to-md/SKILL.md
 
+    - name: ponytail
+      description: Lazy senior dev mode — forces the laziest solution that actually works via a decision ladder (YAGNI → stdlib → native → installed dep → one line → minimum). Never cuts validation, error handling, security, or accessibility. Three intensity levels (lite/full/ultra). Reproduces DietrichGebert/ponytail as a skill.
+      source: /Users/pierre-mikel/Github/agentic/skills/ponytail/SKILL.md
+
     - name: pr-automerge
       description: Create a pull request after completing all changes, then enable auto-merge so the PR merges automatically once CI/CD passes
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/pr-automerge/SKILL.md
