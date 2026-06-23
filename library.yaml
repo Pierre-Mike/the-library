@@ -105,6 +105,10 @@ library:
       description: Testing strategies and patterns for pi extensions — unit tests, integration tests with mock ctx, smoke tests, eval datasets, state reconstruction, and document-consistency checks
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/pi-extension-testing/SKILL.md
 
+    - name: planf3
+      description: Meta-skill for planning — generates structured engineering implementation plans as self-contained HTML (synced diagrams, append-only metadata, status-tracked checklists). Five workflows (create/update/build/update-references/image-generation). Needs uv and OPENAI_API_KEY for GPT-Image diagram generation. From disler/planf3.
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/planf3/SKILL.md
+
     - name: pdf-to-md
       description: Converts PDF files to clean well-structured Markdown using marker-pdf for high-accuracy extraction of text, tables, headers, and equations
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/pdf-to-md/SKILL.md
