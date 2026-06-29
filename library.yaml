@@ -117,6 +117,10 @@ library:
       description: Lazy senior dev mode — forces the laziest solution that actually works via a decision ladder (YAGNI → stdlib → native → installed dep → one line → minimum). Never cuts validation, error handling, security, or accessibility. Three intensity levels (lite/full/ultra). Reproduces DietrichGebert/ponytail as a skill.
       source: /Users/pierre-mikel/Github/agentic/skills/ponytail/SKILL.md
 
+    - name: pulumi-axioms
+      description: Opinionated, correct Pulumi (TypeScript) IaC axioms — 7 canonical best practices (no resources in apply, pass Outputs directly / pulumi.interpolate, ComponentResource with parent:this + registerOutputs, secrets from day one, aliases on refactor, preview before up) fused with the ts-axioms deploy stances (container-as-deploy-unit, provider-neutral DeployTarget adapter, typed-config-fails-fast core). Built TDD; with-skill 100% vs bare 35% on locked text-evals.
+      source: /Users/pierre-mikel/Github/agentic/skills/pulumi-axioms/SKILL.md
+
     - name: pr-automerge
       description: Create a pull request after completing all changes, then enable auto-merge so the PR merges automatically once CI/CD passes
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/pr-automerge/SKILL.md
