@@ -45,6 +45,10 @@ library:
       description: Generate multiple radically different interface designs for a module using parallel sub-agents
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/design-an-interface/SKILL.md
 
+    - name: domain-expertise
+      description: Build, sharpen, and enforce a project's domain model — glossary as a ## Domain section in AGENTS.md (auto-loaded by every agent), one-paragraph gated ADRs, a deterministic _Avoid_-term vocabulary linter for pre-commit/CI, and a drift-audit procedure
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/domain-expertise/SKILL.md
+
     - name: edit-article
       description: Edit and improve articles by restructuring sections, improving clarity, and tightening prose
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/edit-article/SKILL.md
@@ -172,10 +176,6 @@ library:
     - name: triage-issue
       description: Triage a bug by exploring the codebase to find root cause, then create a GitHub issue with a TDD-based fix plan
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/triage-issue/SKILL.md
-
-    - name: ubiquitous-language
-      description: Extract a DDD-style ubiquitous language glossary from the current conversation, flagging ambiguities and proposing canonical terms
-      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/ubiquitous-language/SKILL.md
 
     - name: vinted-image-gen
       description: Generates staged product images for Vinted listings using Gemini AI with Playwright for session auth
