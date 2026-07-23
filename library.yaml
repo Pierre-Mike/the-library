@@ -45,6 +45,10 @@ library:
       description: Generate multiple radically different interface designs for a module using parallel sub-agents
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/design-an-interface/SKILL.md
 
+    - name: design-md
+      description: Steward of /DESIGN.md against the google-labs-code/design.md v=alpha format — validates the spec file, lints codebase drift (raw hex literals, Tailwind class mismatches, radius misuse), regenerates typed token exports, and installs itself into any consumer repo. Pure Node, zero dependencies. Deterministic evals 19/19 with skill vs 16/19 bare.
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/design-md/SKILL.md
+
     - name: domain-expertise
       description: Build, sharpen, and enforce a project's domain model — glossary as a ## Domain section in AGENTS.md (auto-loaded by every agent), one-paragraph gated ADRs, a deterministic _Avoid_-term vocabulary linter for pre-commit/CI, and a drift-audit procedure
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/domain-expertise/SKILL.md
