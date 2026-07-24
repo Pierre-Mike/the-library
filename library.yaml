@@ -49,6 +49,10 @@ library:
       description: Steward of /DESIGN.md against the google-labs-code/design.md v=alpha format — validates the spec file, lints codebase drift (raw hex literals, Tailwind class mismatches, radius misuse), regenerates typed token exports, and installs itself into any consumer repo. Pure Node, zero dependencies. Deterministic evals 19/19 with skill vs 16/19 bare.
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/design-md/SKILL.md
 
+    - name: distill-skill
+      description: Create agent skills by distilling domain knowledge into directives — write directives not wisdom, cut general knowledge, concrete examples, one-line anti-patterns, eval decision rule (checkable output gets evals, process guidance gets fresh-agent test)
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/distill-skill/SKILL.md
+
     - name: domain-expertise
       description: Build, sharpen, and enforce a project's domain model — glossary as a ## Domain section in AGENTS.md (auto-loaded by every agent), one-paragraph gated ADRs, a deterministic _Avoid_-term vocabulary linter for pre-commit/CI, and a drift-audit procedure
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/domain-expertise/SKILL.md
