@@ -54,7 +54,7 @@ library:
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/distill-skill/SKILL.md
 
     - name: domain-expertise
-      description: Build, sharpen, and enforce a project's domain model — glossary as a ## Domain section in AGENTS.md (auto-loaded by every agent), one-paragraph gated ADRs, a deterministic _Avoid_-term vocabulary linter for pre-commit/CI, and a drift-audit procedure
+      description: Build, sharpen, and enforce a project's domain model — glossary as a ## Domain section in AGENTS.md (auto-loaded by every agent), one-paragraph gated ADRs, a deterministic _Avoid_-term vocabulary linter for pre-commit/CI, a drift-audit procedure, and Vale-based plain-language (STE-style) prose enforcement with a per-project Terminology.yml generated from the glossary plus a bundled agent self-review hook
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/domain-expertise/SKILL.md
 
     - name: edit-article
