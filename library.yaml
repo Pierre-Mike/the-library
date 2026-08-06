@@ -54,7 +54,7 @@ library:
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/distill-skill/SKILL.md
 
     - name: domain-expertise
-      description: Build, sharpen, and enforce a project's domain model — glossary as a ## Domain section in AGENTS.md (auto-loaded by every agent), one-paragraph gated ADRs, a deterministic _Avoid_-term vocabulary linter for pre-commit/CI, a drift-audit procedure, and Vale-based plain-language (STE-style) prose enforcement with a per-project Terminology.yml generated from the glossary plus a bundled agent self-review hook
+      description: Build, sharpen, and enforce a project's domain model — glossary in a standalone Domain.md auto-loaded via a @Domain.md ref in AGENTS.md, one-paragraph gated ADRs, a deterministic _Avoid_-term vocabulary linter for pre-commit/CI, a drift-audit procedure, and Vale-based plain-language (STE-style) prose enforcement with a per-project Terminology.yml generated from the glossary plus a bundled agent self-review hook
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/domain-expertise/SKILL.md
 
     - name: edit-article
@@ -72,6 +72,10 @@ library:
     - name: goal2
       description: One-shot slash command that captures a goal, decomposes it into 2-5 sub-step harness tasks via TaskCreate, and spawns a background teammate via TaskCreate to orchestrate them. Use when invoking /goal2 with a goal sentence.
       source: /Users/pierre-mikel/Github/agentic/skills/goal2/SKILL.md
+
+    - name: grilling
+      description: Grill the user relentlessly about a plan, decision, or idea — stress-test their thinking one question at a time
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/grilling/SKILL.md
 
     - name: ts-axioms
       description: Engineering axioms and canonical tooling for TypeScript projects — bhvr scaffold (Bun+Hono+Vite+React), Biome, Lefthook, bun, Effect-TS, functional core/imperative shell, Fallow, co-located tests, TanStack Router (UI only) + Query data fetching, and enforcement patterns
@@ -129,6 +133,10 @@ library:
       description: Lazy senior dev mode — forces the laziest solution that actually works via a decision ladder (YAGNI → stdlib → native → installed dep → one line → minimum). Never cuts validation, error handling, security, or accessibility. Three intensity levels (lite/full/ultra). Reproduces DietrichGebert/ponytail as a skill.
       source: /Users/pierre-mikel/Github/agentic/skills/ponytail/SKILL.md
 
+    - name: prototype
+      description: Build a throwaway prototype to answer a design question — sanity-check a state model or logic, or explore what a UI should look like
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/prototype/SKILL.md
+
     - name: pulumi-axioms
       description: Opinionated, correct Pulumi (TypeScript) IaC axioms — 7 canonical best practices (no resources in apply, pass Outputs directly / pulumi.interpolate, ComponentResource with parent:this + registerOutputs, secrets from day one, aliases on refactor, preview before up) fused with the ts-axioms deploy stances (container-as-deploy-unit, provider-neutral DeployTarget adapter, typed-config-fails-fast core). Built TDD; with-skill 100% vs bare 35% on locked text-evals.
       source: /Users/pierre-mikel/Github/agentic/skills/pulumi-axioms/SKILL.md
@@ -148,6 +156,10 @@ library:
     - name: request-refactor-plan
       description: Create a detailed refactor plan with tiny commits via user interview, then file it as a GitHub issue
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/request-refactor-plan/SKILL.md
+
+    - name: research
+      description: Investigate a question against high-trust primary sources and capture the findings as a Markdown file in the repo
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/research/SKILL.md
 
     - name: research-swarm
       description: Orchestrates parallel research across 5 agents with democratic argumentation phase and ranked synthesis of findings
@@ -196,6 +208,11 @@ library:
     - name: write-a-skill
       description: Create new agent skills with proper structure, progressive disclosure, and bundled resources
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/write-a-skill/SKILL.md
+
+    - name: wayfinder
+      description: Plan a huge chunk of work — more than one agent session can hold — as a shared map of decision tickets on the issue tracker, resolved one at a time until the way to the destination is clear. v1.1 adds a resolution checklist, HITL commit rule, and a deterministic map linter (check-map.ts). 88% eval baseline.
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/wayfinder/SKILL.md
+      requires: [skill:grilling, skill:research, skill:prototype, skill:domain-expertise]
 
     - name: zellij-fleet-manager
       description: Introspect, recap, dispatch to, and clean up Zellij sessions across a fleet — including detached sessions, non-focused tabs, and panes you cannot see. Use when the user asks to inventory all Zellij sessions, recap one or many Claude TUIs (live or from JSONL logs), send a slash command to specific idle Claude panes after explicit approval, or surface stranded/orphaned/drained sessions safe to kill. Driven by zellij CLI plus on-disk reads of ~/.claude/projects/. Never attaches, never sends keystrokes without per-batch approval. Complements claude-zellij-fleet/scripts/.
