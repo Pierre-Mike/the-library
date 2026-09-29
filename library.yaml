@@ -24,6 +24,10 @@ library:
       description: Generates Claude Code agent configurations using official format, real-world patterns, and best practices for delegation, tool scoping, and multi-agent coordination
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/agent-generator/SKILL.md
 
+    - name: agent-notes
+      description: Spec-driven development with DeepSeek-Harness-style Agent Notes in .agents/notes/{proposed,implemented,rejected,archived}/{class}/ — the ds-spec-loop method (vendored, MIT) to propose, implement against evidence, and promote decisions; init-notes.ts scaffolds the repo rules; check-notes.ts gates structure, format, links, and a sealed frozen archive for pre-commit/CI; archive/prune rules and a notes-vs-code audit
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/agent-notes/SKILL.md
+
     - name: align
       description: Presents a proposed approach in progressive confirmable chunks with recommended decisions and alternatives before implementation begins. Use when aligning on a design, plan, or technical approach before implementation.
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/align/SKILL.md
@@ -54,7 +58,7 @@ library:
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/distill-skill/SKILL.md
 
     - name: domain-expertise
-      description: Build, sharpen, and enforce a project's domain model — glossary in a standalone Domain.md auto-loaded via a @Domain.md ref in AGENTS.md, one-paragraph gated ADRs, a deterministic _Avoid_-term vocabulary linter for pre-commit/CI, a drift-audit procedure, and Vale-based plain-language (STE-style) prose enforcement with a per-project Terminology.yml generated from the glossary plus a bundled agent self-review hook
+      description: Build, sharpen, and enforce a project's domain vocabulary — glossary in a standalone Domain.md auto-loaded via a @Domain.md ref in AGENTS.md, a deterministic _Avoid_-term vocabulary linter for pre-commit/CI, a drift-audit procedure, and Vale-based plain-language (STE-style) prose enforcement with a per-project Terminology.yml generated from the glossary plus a bundled agent self-review hook
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/domain-expertise/SKILL.md
 
     - name: edit-article
