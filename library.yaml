@@ -201,6 +201,10 @@ library:
       description: Triage a bug by exploring the codebase to find root cause, then create a GitHub issue with a TDD-based fix plan
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/triage-issue/SKILL.md
 
+    - name: unslop
+      description: Cut AI writing tells from prose and return only the rewritten text. Port of Lauren Tan's pstack unslop (28 numbered rules) plus a text-only output rule and a no-invented-facts check. 98% on locked evals vs 61% bare; won a blind human A/B 6-2 against upstream on held-out prompts.
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/unslop/SKILL.md
+
     - name: vinted-image-gen
       description: Generates staged product images for Vinted listings using Gemini AI with Playwright for session auth
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/vinted-image-gen/SKILL.md
