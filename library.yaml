@@ -117,6 +117,10 @@ library:
       description: Search, create, and manage notes in the Obsidian vault with wikilinks and index notes
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/obsidian-vault/SKILL.md
 
+    - name: ovis-ocr
+      description: Local OCR with OvisOCR2 on 127.0.0.1:8797 — images and PDFs to Markdown through the ovis-ocr MCP tool or HTTP, nothing uploaded; when to fall back to model vision
+      source: /Users/pierre-mikel/Github/agentic/skills/ovis-ocr/SKILL.md
+
     - name: pi-extension-generator
       description: Create, debug, and fix pi extensions — TypeScript modules that add custom tools, slash commands, event interceptors, stateful UI widgets, and bash wrappers
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/pi-extension-generator/SKILL.md
