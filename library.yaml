@@ -32,6 +32,10 @@ library:
       description: Presents a proposed approach in progressive confirmable chunks with recommended decisions and alternatives before implementation begins. Use when aligning on a design, plan, or technical approach before implementation.
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/align/SKILL.md
 
+    - name: anatomy
+      description: Build detailed, interactive isometric SVG figures that explain a technical idea as a real physical object, with optional WebGL shaders, 3D mode and A4 print sheets. Upstream wheresryan22/anatomy (MIT). User-only - after install add disable-model-invocation true to its SKILL.md frontmatter.
+      source: https://github.com/wheresryan22/anatomy/blob/main/SKILL.md
+
     - name: auto-optimize
       description: Autonomous overnight skill optimization loop — takes a skill with locked evals and grinds it to peak performance through iterative benchmark-improve-keep/discard cycles on Haiku, with strategy rotation, domain-aware feedback adapters, and git-based isolation
       source: /Users/pierre-mikel/.claude/skills/auto-optimize/SKILL.md
