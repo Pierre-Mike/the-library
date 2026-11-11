@@ -78,7 +78,7 @@ library:
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/expertise/SKILL.md
 
     - name: freecad-modeling
-      description: User-only (/freecad-modeling). Build parametric parts in a live FreeCAD through the freecad MCP server, with parameters in a VarSet, a datum skeleton, fully constrained sketches bound by expressions, a numeric check after each feature, and a flex test. Needs FreeCAD 1.0+ and the neka-nat freecad-mcp addon running.
+      description: User-only (/freecad-modeling). Build or edit parametric FreeCAD parts from a headless build script, with parameters in a VarSet, a datum skeleton, fully constrained sketches bound by expressions, a per-feature volume and position check, a hole check, a flex test, and a drift check when editing an existing part. Needs FreeCAD 1.0+; the freecad MCP addon is optional.
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/freecad-modeling/SKILL.md
 
     - name: goal2
