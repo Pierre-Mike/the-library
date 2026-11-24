@@ -225,6 +225,10 @@ library:
       description: Generates staged product images for Vinted listings using Gemini AI with Playwright for session auth
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/vinted-image-gen/SKILL.md
 
+    - name: vinted-label-print
+      description: Print Vinted shipping labels (bordereaux) from PDF or .eml on an ESC/POS thermal printer (USB or tcp, 80/58 mm). Detects the carrier from the PDF text (InPost, Vinted Go, Mondial Relay, Colissimo, Chronopost), crops the label from its barcode, prints it bigger, and refuses any label whose codes don't read back. Preview first.
+      source: https://github.com/Pierre-Mike/agentic/blob/main/skills/vinted-label-print/SKILL.md
+
     - name: write-a-prd
       description: Create a PRD through user interview, codebase exploration, and module design, then submit as a GitHub issue
       source: https://github.com/Pierre-Mike/agentic/blob/main/skills/write-a-prd/SKILL.md
